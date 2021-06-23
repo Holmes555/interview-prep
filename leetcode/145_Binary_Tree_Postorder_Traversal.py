@@ -17,10 +17,10 @@ class Solution:
             return a
         if t.left is not None:
             self.dfs(t.left, a)
-        a.append(t.val)
         if t.right is not None:
             self.dfs(t.right, a)
+        a.append(t.val)
         return a
 
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
         return self.dfs(root)
