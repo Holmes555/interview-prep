@@ -1,6 +1,6 @@
 import string
 
-input_path = 'input/3_Rucksack_Reorganizatio.txt'
+input_path = 'input/3_Rucksack_Reorganization.txt'
 
 
 def solution1():
