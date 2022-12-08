@@ -4,8 +4,8 @@ from math import sqrt
 class Solution:
     def numSquares(self, n: int) -> int:
         root = int(sqrt(n))
-        sqrt_l = [i ** 2 for i in range(100, 0, -1) if i <= root]
-        result = 10 ** 4
+        sqrt_l = [i**2 for i in range(100, 0, -1) if i <= root]
+        result = 10**4
 
         def dfs(target, path, start):
             nonlocal result

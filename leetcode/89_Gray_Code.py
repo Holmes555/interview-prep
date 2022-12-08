@@ -8,13 +8,13 @@ class Solution:
         seq = [1]
         j = 1
 
-        for i in range(2 ** n - 2):
+        for i in range(2**n - 2):
             v = res[-1]
             l = log((i + 2), 2)
             if l.is_integer():
                 l = int(l)
                 j = len(seq)
-                adding = 2 ** l
+                adding = 2**l
                 next_v = v + adding
                 seq.append(adding)
             else:

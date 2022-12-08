@@ -31,9 +31,7 @@ class Solution:
                                 self.d[target].add((*n, *m))
         return self.d.get(target, set())
 
-    def combinationSum(
-        self, candidates: List[int], target: int
-    ) -> List[List[int]]:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         self.s = set(candidates)
         self.c = sorted(candidates, reverse=True)
         res = self.rec(0, target)
@@ -77,9 +75,7 @@ class Solution2:
                                 self.d[target].add((*n, *m))
         return self.d.get(target, set())
 
-    def combinationSum(
-        self, candidates: List[int], target: int
-    ) -> List[List[int]]:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         self.s = set(candidates)
         self.c = sorted(candidates, reverse=True)
         res = self.rec(0, target)

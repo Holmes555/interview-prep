@@ -24,9 +24,7 @@ class Solution:
             self.lca = t
         return max(lca)
 
-    def lowestCommonAncestor(
-        self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode'
-    ) -> 'TreeNode':
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         self.p = p
         self.q = q
         self.dfs(root)

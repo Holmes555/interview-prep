@@ -1,5 +1,5 @@
 def sortedSquaredArray(array):
-    new_ar = [x ** 2 for x in array]
+    new_ar = [x**2 for x in array]
     l = len(new_ar)
     while True:
         i = 0

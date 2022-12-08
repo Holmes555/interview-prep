@@ -2,9 +2,7 @@ from typing import List
 
 
 class Solution:
-    def maxArea(
-        self, h: int, w: int, horizontalCuts: List[int], verticalCuts: List[int]
-    ) -> int:
+    def maxArea(self, h: int, w: int, horizontalCuts: List[int], verticalCuts: List[int]) -> int:
         horizontalCuts.extend([0, h])
         verticalCuts.extend([0, w])
         horizontalCuts.sort()
@@ -23,4 +21,4 @@ class Solution:
             if dist > v_max:
                 v_max = dist
 
-        return h_max * v_max % (10 ** 9 + 7)
+        return h_max * v_max % (10**9 + 7)
