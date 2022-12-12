@@ -1,6 +1,5 @@
 import dataclasses
-from typing import Optional, Dict
-
+from typing import Dict, Optional
 
 input_path = 'input/7_No_Space_Left_On_Device.txt'
 
