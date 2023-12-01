@@ -10,9 +10,9 @@ def get_distance(point1, point2):
 def get_points():
     points = []
     min_x = 10**9
-    max_x = -10**9
+    max_x = -(10**9)
     min_y = 10**9
-    max_y = -10**9
+    max_y = -(10**9)
     with open(input_path) as f:
         for line in f:
             line = line.replace('\n', '')
