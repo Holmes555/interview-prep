@@ -1,7 +1,7 @@
 import re
 
 
-input_path = 'input/1_Trebuchet?!.txt'
+input_path = 'input/1_Trebuchet.txt'
 
 
 def solution1():
