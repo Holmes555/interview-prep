@@ -1,6 +1,5 @@
 import re
 
-
 input_path = 'input/1_Trebuchet.txt'
 
 

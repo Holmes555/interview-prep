@@ -1,7 +1,6 @@
 input_path = 'input/10_Pipe_Maze.txt'
 
 
-
 def get_maze():
     maze = []
     with open(input_path) as f:
@@ -20,23 +19,23 @@ def make_move(i, j, maze, weights, pool, value='-'):
     if val == 'S':
         val = value
     if val == '|':
-        add_coords(i+1, j)
-        add_coords(i-1, j)
+        add_coords(i + 1, j)
+        add_coords(i - 1, j)
     if val == '-':
-        add_coords(i, j+1)
-        add_coords(i, j-1)
+        add_coords(i, j + 1)
+        add_coords(i, j - 1)
     if val == 'L':
-        add_coords(i-1, j)
-        add_coords(i, j+1)
+        add_coords(i - 1, j)
+        add_coords(i, j + 1)
     if val == 'J':
-        add_coords(i-1, j)
-        add_coords(i, j-1)
+        add_coords(i - 1, j)
+        add_coords(i, j - 1)
     if val == '7':
-        add_coords(i+1, j)
-        add_coords(i, j-1)
+        add_coords(i + 1, j)
+        add_coords(i, j - 1)
     if val == 'F':
-        add_coords(i+1, j)
-        add_coords(i, j+1)
+        add_coords(i + 1, j)
+        add_coords(i, j + 1)
 
 
 def solution1():

@@ -1,6 +1,6 @@
+from functools import lru_cache
 from math import inf
 from typing import List
-from functools import lru_cache
 
 
 class Solution:

@@ -3,7 +3,7 @@
 
 class Solution:
     def numOfSubarrays(self, arr: List[int]) -> int:
-        modulefinder = 10 ** 9 + 7
+        modulefinder = 10**9 + 7
         result = 0
         number_of_odd = 0
         number_of_even = 0

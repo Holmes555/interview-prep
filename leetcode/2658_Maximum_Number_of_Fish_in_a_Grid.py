@@ -19,7 +19,7 @@ class Solution:
         if i != self.n - 1:
             a.add((i + 1, j))
         return a
-    
+
     def rec(self, coords, board):
         if coords in self.v:
             return 0
